@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Manohar &amp; Suneetha — Wedding Invitation</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Manohar & Suneetha — Wedding Celebrations. Join us in celebrating our big day.">
+<meta name="theme-color" content="#fbf3ee">
+<meta property="og:title" content="Manohar & Suneetha — Wedding Celebrations">
+<meta property="og:description" content="We would love for you to be part of our big day.">
+<meta property="og:image" content="img/og.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Great+Vibes&family=Noto+Serif+Telugu:wght@400;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <a href="#top" class="nav-logo" id="navLogo">M &amp; S</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span></button>
+  <ul id="navList">
+    <li><a href="#couple">Couple</a></li>
+    <li><a href="#events">Events</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#venue" class="btn-small">Venue</a></li>
+  </ul>
+</nav>
+
+<header class="hero" id="top">
+  <picture>
+    <source media="(max-width: 768px)" srcset="img/hero-tall.jpg">
+    <img src="img/hero-wide.jpg" alt="Manohar and Suneetha" class="hero-img">
+  </picture>
+  <div class="hero-shade"></div>
+  <div class="hero-content">
+    <p class="small-caps" id="heroEyebrow">Together with their families</p>
+    <h1><span id="gName"></span> <em>&amp;</em> <span id="bName"></span></h1>
+    <p class="hero-date" id="heroDate"></p>
+    <p class="hero-place" id="heroPlace"></p>
+    <div class="countdown" id="countdown">
+      <div><b id="cd-d">--</b><span>Days</span></div>
+      <div><b id="cd-h">--</b><span>Hours</span></div>
+      <div><b id="cd-m">--</b><span>Minutes</span></div>
+      <div><b id="cd-s">--</b><span>Seconds</span></div>
+    </div>
+    <a href="#events" class="btn">View Celebrations</a>
+  </div>
+  <a href="#invite" class="scroll-down" aria-label="Scroll down">&#8964;</a>
+</header>
+
+<section class="section center" id="invite">
+  <div class="ornament">❀</div>
+  <p class="te telugu" id="teluguLine"></p>
+  <h2>With Joy in Our Hearts</h2>
+  <p class="lead" id="tagline"></p>
+  <p class="hashtag" id="hashtag"></p>
+</section>
+
+<section class="section alt" id="couple">
+  <h2 class="center">The Couple</h2>
+  <div class="story" id="storyText"></div>
+  <div class="couple-grid">
+    <figure class="couple-card">
+      <img src="img/engagement-1.jpg" alt="Manohar and Suneetha" loading="lazy">
+    </figure>
+    <div class="families">
+      <div class="family" id="famGroom"></div>
+      <div class="amp">&amp;</div>
+      <div class="family" id="famBride"></div>
+    </div>
+    <figure class="couple-card">
+      <img src="img/wedding-2.jpg" alt="The newlywed couple" loading="lazy">
+    </figure>
+  </div>
+</section>
+
+<section class="section" id="events">
+  <h2 class="center">Celebrations</h2>
+  <div class="timeline" id="eventList"></div>
+</section>
+
+<section class="section alt" id="gallery">
+  <h2 class="center">Moments</h2>
+  <div class="gallery" id="galleryGrid"></div>
+</section>
+
+<section class="section" id="venue">
+  <h2 class="center">How do we get there?</h2>
+  <p class="center lead" id="venueName"></p>
+  <div class="map-wrap"><iframe id="mapFrame" title="Venue map" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+  <div class="center venue-actions">
+    <a class="btn" id="mapLink" target="_blank" rel="noopener">Open in Google Maps</a>
+    <a class="btn ghost" id="mapDirections" target="_blank" rel="noopener">Get directions</a>
+  </div>
+  <div class="contacts" id="contacts"></div>
+</section>
+
+<footer class="footer center">
+  <div class="logo-script" id="footNames"></div>
+  <p id="footHash"></p>
+  <p class="tiny" id="inviteFor"></p>
+</footer>
+
+<div class="lightbox" id="lightbox" hidden>
+  <button class="lb-close" aria-label="Close">&times;</button>
+  <button class="lb-prev" aria-label="Previous">&#8249;</button>
+  <img alt="">
+  <button class="lb-next" aria-label="Next">&#8250;</button>
+</div>
+
+<script src="config.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
